@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const base = "/marwan-portfolio/";
+const base = "/";
 
 export default defineNuxtConfig({
   ssr: true,
