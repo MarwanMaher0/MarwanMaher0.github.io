@@ -71,11 +71,11 @@
           ><i class="fab fa-linkedin-in"></i
         ></a>
         <a
-          href="https://www.facebook.com/marwan.maher.50746"
+          href="https://github.com/MarwanMaher0"
           target="_blank"
           rel="noopener"
-          aria-label="Facebook"
-          ><i class="fab fa-facebook-f"></i
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
         ></a>
         <a
           href="https://twitter.com/MElg3fre"
@@ -85,11 +85,11 @@
           ><i class="fab fa-twitter"></i
         ></a>
         <a
-          href="https://www.instagram.com/marwan_elg3fre/"
+          href="https://www.facebook.com/marwan.maher.50746"
           target="_blank"
           rel="noopener"
-          aria-label="Instagram"
-          ><i class="fab fa-instagram"></i
+          aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
         ></a>
       </div>
     </div>

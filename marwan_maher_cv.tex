@@ -1,0 +1,147 @@
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[
+    ignoreheadfoot,
+    top=1cm,
+    bottom=1.5cm,
+    left=2cm,
+    right=2cm,
+    footskip=1cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Marwan Maher Mostafa — CV},
+    pdfauthor={Marwan Maher Mostafa},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=MidnightBlue
+]{hyperref}
+\usepackage{eso-pic}
+\usepackage{bookmark}
+\usepackage{paracol}
+\usepackage{charter}
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\pagestyle{empty}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{0.3cm}{0.2cm}
+
+\renewcommand\labelitemi{\small$\bullet$}
+\newenvironment{highlights}{
+    \begin{itemize}[topsep=0.10cm, parsep=0.07cm, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+}{
+    \end{itemize}
+}
+
+\newenvironment{header}{
+    \centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\begin{document}
+
+% ═══════════════════════════════════════════════════
+%  HEADER
+% ═══════════════════════════════════════════════════
+\begin{header}
+    {\LARGE \textbf{Marwan Maher Mostafa}} \\[2pt]
+    {\small Developer \& Project Manager} \\[4pt]
+    \href{mailto:Marwanmaher635@gmail.com}{\faEnvelope\ Marwanmaher635@gmail.com} \textbar{}
+    \href{tel:+201025027019}{\faPhone\ +20 102 502 7019} \textbar{}
+    \faMapMarker*\ Assiut, Egypt \\[3pt]
+    \href{https://www.linkedin.com/in/marwan-maher-b11628227}{\faLinkedin\ LinkedIn} \textbar{}
+    \href{https://github.com/MarwanMaher0}{\faGithub\ GitHub} \textbar{}
+    \href{https://marwanmaher0.github.io}{\faGlobe\ Portfolio}
+\end{header}
+
+\vspace{0.2cm}
+
+% ═══════════════════════════════════════════════════
+%  SUMMARY
+% ═══════════════════════════════════════════════════
+\section{Professional Summary}
+Full-stack developer turned project manager with 3+ years of experience shipping \textbf{15 production applications} across enterprise SaaS, healthcare, AI/AR, and e-commerce. Promoted twice at SIPRC — from Senior Front-End to Full Stack to \textbf{Project Manager leading a team of 6} across 4 enterprise IP products serving the Saudi government market. Core stack: Vue 3/Nuxt, Next.js/React, TypeScript, Three.js, TensorFlow.js, with full-stack reach into Django and Laravel.
+
+% ═══════════════════════════════════════════════════
+%  EXPERIENCE
+% ═══════════════════════════════════════════════════
+\section{Experience}
+
+\textbf{Project Manager $\vert$ Senior Front-End $\rightarrow$ Full Stack Developer} \hfill \textbf{2025 – Present} \\
+\textit{Saudi Intellectual Property Rights Company (SIPRC) — Riyadh, KSA} \\
+\begin{highlights}
+    \item Promoted twice in under a year to \textbf{Project Manager leading a team of 6 developers} across 4 enterprise products — IPORA, Cepro Dashboard, Cepro.ai, and SIPRC Website.
+    \item Built \textbf{IPORA} (307 components, 44 routes) — flagship IP portfolio platform covering Trademarks, Patents, Copyrights, and Industrial Designs with granular RBAC, now used daily by SIPRC's operations teams. \href{https://dbp.siprc.sa}{[\,dbp.siprc.sa\,]}
+    \item Developed \textbf{Cepro Dashboard} (211 components, 4-tier RBAC) — brand protection platform monitoring IP infringement across web, social media, apps, and dark web with SLA-tracked takedowns. \href{https://dbp.cepro.ai}{[\,dbp.cepro.ai\,]}
+    \item Led \textbf{Cepro.ai} rebuild with Next.js 15 + React 19 — 17 pages, in-browser Arabic OCR via Tesseract.js, delivered 2 weeks ahead of deadline. \href{https://www.cepro.ai/en}{[\,cepro.ai\,]}
+    \item Established QA practice from scratch: Selenium automation suite with \textbf{530+ test cases across 170+ features}, reducing manual regression by \textbf{40\%}.
+    \item Authored 59-page VitePress developer documentation, cutting new-developer onboarding time in half.
+\end{highlights}
+
+\textbf{Front-End Developer} \hfill \textbf{2023 – 2024} \\
+\textit{Digitee — AI-Powered Fashion Technology (Remote)} \\
+\begin{highlights}
+    \item Sole front-end developer who built \textbf{6 production applications} for an AI fashion startup — from zero to launch across consumer, e-commerce, B2B, and operations.
+    \item Developed \textbf{AR virtual try-on} (TensorFlow.js + MediaPipe Pose) and a \textbf{Three.js 3D Showroom}, enabling customers to visualize products before purchase.
+    \item Shipped \textbf{multi-region e-commerce} serving 5 countries (US, Egypt, Qatar, UAE, Saudi Arabia) with geo-aware routing, dual payment gateways (PayPal + Kashier), and 5-language support.
+    \item Created \textbf{Mintora} print-on-demand platform (307 components) with FullCalendar scheduling and public QR-code order tracking for factory floor access.
+    \item Built B2B enterprise dashboard (212 components) with AI image generation, token usage analytics, and \textbf{16-language i18n} including full RTL.
+\end{highlights}
+
+\textbf{Front-End Developer} \hfill \textbf{2022 – 2023 \normalfont{(6 months, concurrent with freelance)}} \\
+\textit{IDAAM — Brain Health Technology (USA, Remote)} \\
+\begin{highlights}
+    \item Built front-end for \textbf{Keme}, a full-scale US clinic management platform — 552 Vue files powering 65 modules (Patients, Providers, Appointments, Telehealth, Billing, Lab, AI Notes). \href{https://dev.id3m.dev}{[\,dev.id3m.dev\,]}
+    \item Integrated telehealth video (Jitsi), VoIP (RingCentral), payments (Stripe), and real-time updates (Pusher WebSockets) into a unified patient experience.
+    \item Collaborated with a Laravel backend team across 1,509 API routes and 402 database migrations; implemented RBAC, Elasticsearch search, and Google 2FA.
+\end{highlights}
+
+\textbf{Front-End Developer (Freelance)} \hfill \textbf{2022 – 2023} \\
+\begin{highlights}
+    \item Delivered 4 client projects independently: \textbf{Climate Risk Assessment Tool} (PhD research, Leaflet maps + PDF export), \textbf{Lusion 3D} (Three.js WebGL recreation with cloth physics), fitness \textbf{e-commerce} (Django REST backend), and a \textbf{User Management Dashboard} (TypeScript, Cypress E2E, EN/AR RTL).
+\end{highlights}
+
+% ═══════════════════════════════════════════════════
+%  TECHNICAL SKILLS
+% ═══════════════════════════════════════════════════
+\section{Technical Skills}
+
+\textbf{Front-End:} Vue 3, Nuxt 3, React, Next.js, TypeScript, JavaScript (ES6+), Tailwind CSS, Vuetify, SCSS, Three.js, GSAP \\[3pt]
+\textbf{Back-End \& Data:} Django REST, Laravel, PostgreSQL, MySQL, Redis, Elasticsearch, Docker, AWS S3 \\[3pt]
+\textbf{AI / AR / Web3:} TensorFlow.js (BodyPix, MediaPipe), Three.js/WebGL, MetaMask SDK, ethers.js, WalletConnect \\[3pt]
+\textbf{Testing \& QA:} Playwright, Cypress, Selenium (530+ cases), Vitest, CI/CD pipelines \\[3pt]
+\textbf{State \& i18n:} Pinia, Redux Toolkit, vue-i18n, next-intl, RTL/LTR, WCAG 2.1, up to 16 locales \\[3pt]
+\textbf{Leadership:} Agile/Scrum, cross-functional team management, code review, VitePress documentation, Mixpanel analytics
+
+% ═══════════════════════════════════════════════════
+%  LANGUAGES
+% ═══════════════════════════════════════════════════
+\section{Languages}
+\textbf{Arabic} — Native \textbar{} \textbf{English} — Professional working proficiency
+
+% ═══════════════════════════════════════════════════
+%  EDUCATION
+% ═══════════════════════════════════════════════════
+\section{Education}
+\textbf{Bachelor of Computer Science}, Assiut University — Assiut, Egypt \hfill \textbf{2019 – 2023} \\
+Software engineering, data structures \& algorithms, databases, and system design.
+
+\end{document}

@@ -46,6 +46,14 @@
                 <li>Bilingual RTL/LTR internationalization</li>
                 <li>AR / AI / 3D web experiences</li>
               </ul>
+              <div class="mt-25">
+                <a
+                  href="/Marwan_Maher_Mostafa_CV.pdf"
+                  download
+                  class="theme-btn style-two"
+                  ><i class="fas fa-download" style="margin-right: 6px"></i> Download CV</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -89,6 +97,60 @@
                 }}</strong>
               </p>
               <p>{{ exp.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Languages -->
+    <section class="service-section pb-100 rpb-70">
+      <div class="container container-1290">
+        <div class="row gap-70 align-items-start">
+          <div class="col-lg-6">
+            <div class="wow fadeInUp delay-0-2s">
+              <div class="section-title mb-30">
+                <span class="sub-title mb-15">Education</span>
+                <h2>Academic Background</h2>
+              </div>
+              <div
+                class="service-item style-three"
+                style="margin-bottom: 0"
+              >
+                <div class="icon"><i class="flaticon-optimization-1"></i></div>
+                <h4>Bachelor of Computer Science</h4>
+                <p class="mb-5"><strong style="color: rgba(255,255,255,0.7)">Assiut University</strong></p>
+                <span
+                  class="d-inline-block px-3 py-1 rounded-pill"
+                  style="background: rgba(255,255,255,0.06); font-size: 13px; color: rgba(255,255,255,0.5)"
+                >2019 — 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="wow fadeInUp delay-0-4s">
+              <div class="section-title mb-30">
+                <span class="sub-title mb-15">Languages</span>
+                <h2>Communication</h2>
+              </div>
+              <div class="service-item style-three" style="margin-bottom: 15px">
+                <h4 class="mb-10">Arabic</h4>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="flex: 1; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden">
+                    <div style="width: 100%; height: 100%; background: #00d4aa; border-radius: 3px"></div>
+                  </div>
+                  <span style="color: rgba(255,255,255,0.6); font-size: 13px; min-width: 50px">Native</span>
+                </div>
+              </div>
+              <div class="service-item style-three" style="margin-bottom: 0">
+                <h4 class="mb-10">English</h4>
+                <div class="d-flex align-items-center gap-3">
+                  <div style="flex: 1; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden">
+                    <div style="width: 85%; height: 100%; background: #00d4aa; border-radius: 3px"></div>
+                  </div>
+                  <span style="color: rgba(255,255,255,0.6); font-size: 13px; min-width: 50px">Professional</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

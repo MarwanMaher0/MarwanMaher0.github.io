@@ -33,10 +33,10 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/marwan.maher.50746"
+                    href="https://github.com/MarwanMaher0"
                     target="_blank"
                     rel="noopener"
-                    >Facebook</a
+                    >GitHub</a
                   >
                 </li>
                 <li>
@@ -49,10 +49,10 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/marwan_elg3fre/"
+                    href="https://www.facebook.com/marwan.maher.50746"
                     target="_blank"
                     rel="noopener"
-                    >Instagram</a
+                    >Facebook</a
                   >
                 </li>
               </ul>

@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     "/about": { prerender: true },
     "/projects": { prerender: true },
     "/contact": { prerender: true },
-    "/project-details": { prerender: true },
+    "/project-details/**": { prerender: true },
   },
 
   app: {

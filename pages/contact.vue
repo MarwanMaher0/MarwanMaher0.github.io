@@ -53,10 +53,10 @@
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
                 <a
-                  href="https://www.facebook.com/marwan.maher.50746"
+                  href="https://github.com/MarwanMaher0"
                   target="_blank"
                   rel="noopener"
-                  ><i class="fab fa-facebook-f"></i
+                  ><i class="fab fa-github"></i
                 ></a>
                 <a
                   href="https://twitter.com/MElg3fre"
@@ -65,10 +65,10 @@
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a
-                  href="https://www.instagram.com/marwan_elg3fre/"
+                  href="https://www.facebook.com/marwan.maher.50746"
                   target="_blank"
                   rel="noopener"
-                  ><i class="fab fa-instagram"></i
+                  ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a href="mailto:Marwanmaher635@gmail.com"
                   ><i class="far fa-envelope"></i

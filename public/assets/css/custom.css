@@ -49,3 +49,7 @@
 .project-item.style-five {
   position: relative;
 }
+
+.rotated-man:before {
+  display: none !important;
+}

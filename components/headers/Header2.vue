@@ -67,7 +67,13 @@
           </div>
 
           <!-- Menu Button -->
-          <div class="menu-btns ms-lg-auto">
+          <div class="menu-btns ms-lg-auto d-flex align-items-center">
+            <a
+              href="/Marwan_Maher_Mostafa_CV.pdf"
+              download
+              class="theme-btn me-3"
+              >Download CV <i class="fas fa-download"></i
+            ></a>
             <NuxtLink href="/contact" class="theme-btn style-two me-4"
               >Let’s Talk <i class="far fa-arrow-right"></i
             ></NuxtLink>

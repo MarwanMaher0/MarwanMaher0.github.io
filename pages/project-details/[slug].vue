@@ -159,13 +159,13 @@
             </div>
             <div class="content">
               <h4>
-                <NuxtLink :href="`/project-details?slug=${prevProject.slug}`">{{
+                <NuxtLink :href="`/project-details/${prevProject.slug}`">{{
                   prevProject.title
                 }}</NuxtLink>
               </h4>
               <NuxtLink
                 class="read-more"
-                :href="`/project-details?slug=${prevProject.slug}`"
+                :href="`/project-details/${prevProject.slug}`"
                 >Previous <i class="far fa-arrow-right"></i
               ></NuxtLink>
             </div>
@@ -181,13 +181,13 @@
           <div v-if="nextProject" class="next-post wow fadeInRight delay-0-2s">
             <div class="content">
               <h4>
-                <NuxtLink :href="`/project-details?slug=${nextProject.slug}`">{{
+                <NuxtLink :href="`/project-details/${nextProject.slug}`">{{
                   nextProject.title
                 }}</NuxtLink>
               </h4>
               <NuxtLink
                 class="read-more"
-                :href="`/project-details?slug=${nextProject.slug}`"
+                :href="`/project-details/${nextProject.slug}`"
                 >Next <i class="far fa-arrow-right"></i
               ></NuxtLink>
             </div>
@@ -219,7 +219,7 @@ import {
 
 const a = useAssetUrl();
 const route = useRoute();
-const slug = computed(() => route.query.slug || allProjects[0].slug);
+const slug = computed(() => route.params.slug || allProjects[0].slug);
 const project = computed(() => getProjectBySlug(slug.value) || allProjects[0]);
 
 const experiencePhase = computed(() =>
@@ -266,7 +266,7 @@ useSeoMeta({
   ogImage: () => `https://marwanmaher0.github.io${a(project.value.image)}`,
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogUrl: () => `https://marwanmaher0.github.io/project-details?slug=${slug.value}`,
+  ogUrl: () => `https://marwanmaher0.github.io/project-details/${slug.value}`,
   twitterTitle: () => `${project.value.title} — Marwan Maher Mostafa`,
   twitterDescription: () => project.value.subtitle,
   twitterImage: () => `https://marwanmaher0.github.io${a(project.value.image)}`,

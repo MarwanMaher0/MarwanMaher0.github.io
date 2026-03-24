@@ -74,7 +74,7 @@
                 :style="{ animationDelay: `${pi * 0.1}s` }"
               >
                 <NuxtLink
-                  :href="`/project-details?slug=${project.slug}`"
+                  :href="`/project-details/${project.slug}`"
                   class="d-block"
                 >
                   <div class="card-image-wrap">

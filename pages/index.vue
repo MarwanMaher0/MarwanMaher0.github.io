@@ -4,6 +4,29 @@
     <section class="hero-area-four pt-250 rpt-120 pb-220 rpb-100 rel z-1">
       <div class="container container-1620 rel z-1">
         <div class="hero-four-content rel mt-50 text-center">
+          <div class="mb-25">
+            <span
+              class="d-inline-block px-4 py-2 rounded-pill"
+              style="
+                background: rgba(0, 212, 170, 0.15);
+                border: 1px solid #00d4aa;
+                color: #00d4aa;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+              "
+            >
+              <i
+                class="fas fa-circle"
+                style="
+                  font-size: 8px;
+                  margin-right: 8px;
+                  animation: pulse 2s infinite;
+                "
+              ></i>
+              Open to Opportunities
+            </span>
+          </div>
           <h1>
             <span class="marquee-wrap">
               <span class="marquee-inner one">
@@ -41,17 +64,26 @@
               </span>
             </span>
           </h1>
-          <div class="rotated-man-wrap">
-            <div class="rotated-man">
-              <img
-                :src="a('/assets/images/marwan.jpeg')"
-                alt="Marwan Maher Mostafa"
-                loading="lazy"
-                width="570"
-                height="570"
-              />
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center gap-4 mt-40 flex-wrap">
+        <div class="text-center">
+          <h3 class="mb-5" style="color: #00d4aa">3+</h3>
+          <span style="color: rgba(255, 255, 255, 0.6); font-size: 14px"
+            >Years Experience</span
+          >
+        </div>
+        <div class="text-center">
+          <h3 class="mb-5" style="color: #00d4aa">15+</h3>
+          <span style="color: rgba(255, 255, 255, 0.6); font-size: 14px"
+            >Projects Shipped</span
+          >
+        </div>
+        <div class="text-center">
+          <h3 class="mb-5" style="color: #00d4aa">4</h3>
+          <span style="color: rgba(255, 255, 255, 0.6); font-size: 14px"
+            >Companies</span
+          >
         </div>
       </div>
       <div class="hero-shapes">
@@ -108,16 +140,27 @@
                       class="theme-btn style-two mt-15 me-3"
                       >More About Me <i class="far fa-arrow-right"></i
                     ></NuxtLink>
-                    <NuxtLink href="/projects" class="theme-btn mt-15"
+                    <NuxtLink href="/projects" class="theme-btn mt-15 me-3"
                       >View Experience <i class="far fa-arrow-right"></i
                     ></NuxtLink>
+                    <a
+                      href="/Marwan_Maher_Mostafa_CV.pdf"
+                      download
+                      class="theme-btn mt-15"
+                      style="
+                        background: transparent;
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                      "
+                      ><i class="fas fa-download" style="margin-right: 6px"></i>
+                      Download CV</a
+                    >
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="about-four-image wow fadeInUp delay-0-4s">
                   <img
-                    :src="a('/assets/images/marwan2.jpg')"
+                    :src="a('/assets/images/marwana.jpeg')"
                     alt="Marwan Maher Mostafa"
                   />
                 </div>
@@ -213,16 +256,16 @@
           <div class="col-lg-7">
             <div class="my-skill-images wow fadeInRight delay-0-2s">
               <div class="skill-item">
-                <img :src="a('/assets/images/skills/skill4.png')" alt="Vue.js" /><span
-                  class="text"
-                  >Vue 3 / Nuxt</span
-                >
+                <img
+                  :src="a('/assets/images/skills/skill4.png')"
+                  alt="Vue.js"
+                /><span class="text">Vue 3 / Nuxt</span>
               </div>
               <div class="skill-item">
-                <img :src="a('/assets/images/skills/skill4.png')" alt="React" /><span
-                  class="text"
-                  >React / Next.js</span
-                >
+                <img
+                  :src="a('/assets/images/skills/skill4.png')"
+                  alt="React"
+                /><span class="text">React / Next.js</span>
               </div>
               <div class="skill-item">
                 <img
@@ -269,7 +312,7 @@
           <div
             v-for="project in featured"
             :key="project.slug"
-            class="col-lg-3 col-md-6"
+            class="col-lg-4 col-md-6"
           >
             <div class="project-item">
               <div
@@ -277,7 +320,7 @@
                 style="
                   border-radius: 10px;
                   overflow: hidden;
-                  aspect-ratio: 4 / 5;
+                  aspect-ratio: 16 / 10;
                 "
               >
                 <img
@@ -286,14 +329,10 @@
                   loading="lazy"
                   width="280"
                   height="350"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                  "
+                  style="width: 100%; height: 100%; object-fit: cover"
                 />
                 <NuxtLink
-                  :href="`/project-details?slug=${project.slug}`"
+                  :href="`/project-details/${project.slug}`"
                   class="project-btn"
                   ><i class="far fa-arrow-right"></i
                 ></NuxtLink>
@@ -303,7 +342,7 @@
                   companyLabels[project.company]
                 }}</span>
                 <h4>
-                  <NuxtLink :href="`/project-details?slug=${project.slug}`">{{
+                  <NuxtLink :href="`/project-details/${project.slug}`">{{
                     project.title
                   }}</NuxtLink>
                 </h4>
@@ -377,6 +416,5 @@ const featured = [
   getProjectsByCompany("siprc")[0], // IPORA
   getProjectsByCompany("digitee")[0], // Digitee Consumer Platform
   getProjectsByCompany("IDAAM")[0], // Keme Brain Health
-  getProjectsByCompany("freelance")[0], // Climate Risk Assessment
 ];
 </script>
